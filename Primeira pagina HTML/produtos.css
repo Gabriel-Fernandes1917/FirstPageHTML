@@ -17,14 +17,51 @@ nav a {
 
 nav{
 	position: absolute;
-	
+	top: 75px;
+	right: 0;
 }
 
-header > div{
+.caixa{
+	width: 940px;
 	position: relative;
+	margin: 0 auto;
 }
 
 header > div > nav > ul{
-	position: absolute;
+	
 	margin-top: 10px;
+}
+
+.products{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.products h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.products li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top; /*aling with top line*/
+	background: #c2b9b9;
+	margin:  0 1.5%;
+	padding: 30px 30px;
+	
+}
+
+.products-price{
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
+
+.products-description{
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0 0;
 }
