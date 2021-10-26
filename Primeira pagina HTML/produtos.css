@@ -15,6 +15,11 @@ nav a {
 	text-decoration: none;
 }
 
+nav a:hover{
+	color: #c78c19;
+	text-decoration: underline;
+}
+
 nav{
 	position: absolute;
 	top: 75px;
@@ -48,10 +53,28 @@ header > div > nav > ul{
 	text-align: center;
 	width: 30%;
 	vertical-align: top; /*aling with top line*/
-	background: #c2b9b9;
+	box-sizing: border-box;
 	margin:  0 1.5%;
-	padding: 30px 30px;
-	
+	padding: 30px 20px;
+	box-sizing: border-box;/*?*/
+	/* border-width: 2px;
+	border-color: #000000;
+	border-style: solid; */
+	border: 2px solid #000000; /* size, type and color  */
+	border-radius: 10px;
+}
+
+.products li:hover{
+	border-color: #c78c19;
+}
+
+.products li:hover h2{
+	font-size: 40px;
+}
+
+
+.products li:active{ /* when click in mouse */
+	border-color: #088C19;
 }
 
 .products-price{
@@ -64,4 +87,15 @@ header > div > nav > ul{
 	font-size: 22px;
 	font-weight: bold;
 	margin: 10px 0 0 0;
+}
+
+footer{
+	text-align: center;
+	background-image: url(br.jpeg);
+	padding: 40px 0;
+}
+
+footer p{
+	color: white;
+	margin-top: 20px;
 }
