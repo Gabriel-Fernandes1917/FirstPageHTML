@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Produtos - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form action="">
+                <label for="nomesobrenome"> Name and last name</label> <!--label is tag the tag for some input-->
+                <input type="text" id="nomesobrenome" class="input-padrao">
+
+                <label for="email">Email</label>
+                <input type="text" id="email">
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone">
+
+				<label for="menssager">Menssager</label>
+				<textarea name="contato" id="menssager" cols="30" rows="10"></textarea>
+
+				<div>
+					<p>what form the contact you prefer ? </p>
+					<label for="radio-email"> <input type="radio" name="contato" value="Email" id="radio-email">Email</label>
+					
+
+					<label for="radio-phone"> <input type="radio" name="contato" value="Phone" id="radio-phone">Phone</label>
+					
+
+					<label for="radio-whatsapp"> <input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp">WhatsApp</label>
+					
+					<!--tag name="contato" is for user cant select more one option-->
+				</div>
+				
+				<label class="checkbox"> <input type="checkbox"> Do you like receive our offers for email ?</label>
+				<input type="submit" value="Send Form"> <!--input the send -->
+			</form>
+		</main>
+
+		<footer>
+			<img src="logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>
