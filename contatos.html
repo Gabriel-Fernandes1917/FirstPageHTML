@@ -10,7 +10,7 @@
 	<body>
 		<header>
 			<div class="caixa">
-				<h1><img src="logo.png"></h1>
+				<h1><img src="logo.png" alt="Logo the Barbearia Alura"></h1>
 
 				<nav>
 					<ul>
@@ -25,45 +25,70 @@
 		<main>
 			<form action="">
                 <label for="nomesobrenome"> Name and last name</label> <!--label is tag the tag for some input-->
-                <input type="text" id="nomesobrenome" class="input-padrao">
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="your name"> <!-- tag required turn the input required-->
 
                 <label for="email">Email</label>
-                <input type="text" id="email">
+                <input type="email" id="email" required placeholder="youremail@domin.com">
 
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
+                <input type="tel" id="telefone" required placeholder="(xx) xxxx-xxxx">
 
 				<label for="menssager">Menssager</label>
-				<textarea id="menssager" cols="70" rows="10" class="input-padrao"></textarea>
+				<textarea id="menssager" cols="70" rows="10" class="input-padrao" required></textarea>
 
-				<div>
-					<p>what form the contact you prefer ? </p>
+				<fieldset> <!--div for databases-->
+					<legend>what form the contact you prefer ? </legend><!-- p to fieldset-->
 					<label for="radio-email"> <input type="radio" name="contato" value="Email" id="radio-email">Email</label>
 					
 
 					<label for="radio-phone"> <input type="radio" name="contato" value="Phone" id="radio-phone">Phone</label>
 					
 
-					<label for="radio-whatsapp"> <input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp">WhatsApp</label>
-					
+					<label for="radio-whatsapp"> <input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label>
+					<!--input checked to default-->
 					<!--tag name="contato" is for user cant select more one option-->
-				</div>
-				<div> <!--drop down options-->
-					<p>what time you prefer ?</p>
+				</fieldset>
+				<fieldset> <!--drop down options-->
+					<legend>what time you prefer ?</legend>
 					<select>
 						<option value="">Morning</option>
 						<option value="">Afternoon</option>
 						<option value="">Night</option>
 					</select>
-				</div>
+				</fieldset>
 				
-				<label class="checkbox"> <input type="checkbox"> Do you like receive our offers for email ?</label>
-				<input type="submit" value="Send Form"> <!--input the send -->
+				<label class="checkbox"> <input type="checkbox" checked> Do you like receive our offers for email ?</label>
+				<input type="submit" value="Send Form" class="send"> <!--input the send -->
 			</form>
+
+			<table>
+				<thead> <!--header-->
+					<tr>
+						<th>Day</th>
+						<th>Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!--body the teable-->
+					<tr>
+						<td>sunday</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Wenday</td>
+						<td >8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Friday</td>
+						<td>8h ~ 20h</td>
+					</tr>
+				</tbody>
+			</table>
+
 		</main>
 
 		<footer>
-			<img src="logo-branco.png">
+			<img src="logo-branco.png" alt="Logo Barbearia Alura">
 			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
 		</footer>
 	</body>
