@@ -34,7 +34,7 @@
                 <input type="text" id="telefone">
 
 				<label for="menssager">Menssager</label>
-				<textarea name="contato" id="menssager" cols="30" rows="10"></textarea>
+				<textarea id="menssager" cols="70" rows="10" class="input-padrao"></textarea>
 
 				<div>
 					<p>what form the contact you prefer ? </p>
@@ -47,6 +47,14 @@
 					<label for="radio-whatsapp"> <input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp">WhatsApp</label>
 					
 					<!--tag name="contato" is for user cant select more one option-->
+				</div>
+				<div> <!--drop down options-->
+					<p>what time you prefer ?</p>
+					<select>
+						<option value="">Morning</option>
+						<option value="">Afternoon</option>
+						<option value="">Night</option>
+					</select>
 				</div>
 				
 				<label class="checkbox"> <input type="checkbox"> Do you like receive our offers for email ?</label>
