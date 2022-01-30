@@ -292,8 +292,7 @@ footer {
 }
 
 main {
-	width: 940px;
-	margin: 0 auto;
+
 }
 
 form {
@@ -368,6 +367,28 @@ td, th {
 	clear: left; /*it suits clear the float  */
 }
 
+.titulo-princial:first-letter{
+	font-weight: bold;
+}
+/*
+.titulo-princial:before{
+	content: "[";
+	/*content the exibion via CSS*//*
+}
+
+.titulo-princial:after{
+	content: "]";
+	/*content the exibion *//*
+}*/
+
+
+.principal{
+	padding: 3em 0;
+	background: #fefefe;
+	width: 940px;
+	margin: 0 auto;
+}
+
 .principal p{
 	margin: 0 0 1em;
 }
@@ -386,19 +407,61 @@ td, th {
 	margin: 0 20px 20px 0;
 }
 
-.imagembeneficios{
-	width: 60%;
-}
-
 .mapa{
 	padding: 3em 0;
+	background: linear-gradient(#fefefe, #888888); /*Create the gradiente bg color*/
+}
 
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
 }
 
 .mapa p {
 	margin: 0 0 2em;
 	text-align: center;
 }
+
+
+.beneficios{
+	padding: 3em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios{
+	width: 640px;
+	margin:  0 auto;
+}
+
+.lista-beneficios{
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens{
+	/*Line size*/
+	line-height: 1.5;
+}
+
+.itens:before{
+	content: "🟊";
+}
+
+.itens:first-child{
+	/*pseudo elements
+	:first-child we select the first element in the class list
+	ex
+	nth-child(number)
+	nth-child(2n) only par numbers
+	last-child*/
+	font-weight: bold;
+}
+
+.imagem-beneficios{
+	width: 60%;
+}
+
 
 .video{
 	width: 560px;
